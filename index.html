@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 100vh;
+      background-image: url(./4903406.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .container{
+      display: flexbox;
+      align-items: center;
+      justify-content: center;
+      padding: 100px;
+    }
+    .container .form{
+      padding: 20px;
+      background-color: #ffdcc4a6;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .container .form .input{
+      height: 50px;
+      width: 500px;
+      border-radius: 10px;
+      border: none;
+      flex: 1;
+      font-size: 20px;
+    }
+    .container .form .input:focus{
+      outline: none;
+    }
+    .container .form .add{
+      min-height: 50px;
+      padding:10px 20px ;
+      width: fit-content;
+      border-radius: 10px;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #6c0e24bf;
+    }
+    .container .tasks{
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #ffdcc4a6;
+      border-radius: 10px;
+      gap: 20px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    
+    .tasks .task{
+      display: flex;
+        background-color: #fff; 
+        padding: 10px;
+        border-radius: 10px;
+        flex: 1 1 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .task div{
+      font-size: 20px;
+      color: rgb(3, 3, 41);
+      text-align: center;
+    }
+    .delete{
+      background-color: #6c0e24bf !important;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .done{
+      opacity:0.6 ;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <input type="text" name="" id="" class="input"
+      placeholder="add yuor comment">
+      <input type="submit" value="Click Enter" class="add">
+    </div>
+    <div class="tasks">
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+  <!-- <script src="./main1.js"></script> -->
+</body>
+</html>
